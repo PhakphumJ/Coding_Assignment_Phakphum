@@ -13,7 +13,7 @@ Makedirectory:
 
 # Go to working Directory and Download data and storing it in the data folder.
 Download:
-	cd Coding-assignment; pwd; curl -o data/hotels-vienna.csv "https://osf.io/download/y6jvb/"
+	cd Coding-assignment; pwd; curl -Lo data/hotels-vienna.csv "https://osf.io/download/y6jvb/"
 
 # See the basic info of the downloaded file.
 Check: 
