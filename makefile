@@ -7,17 +7,17 @@ all: Makedirectory Download Check
 
 # First rule: Make directory to store data, and remove if it already existed.
 Makedirectory:
-	rm -r Coding-assignment/data; mkdir -p Coding-assignment/data
+	rm -r ~/Coding-assignment/data; mkdir -p ~/Coding-assignment/data
 
 
 
 # Go to working Directory and Download data and storing it in the data folder.
 Download:
-	cd Coding-assignment; pwd; curl -Lo data/hotels-vienna.csv "https://osf.io/download/y6jvb/"
+	cd ~/Coding-assignment; pwd; curl -Lo data/hotels-vienna.csv "https://osf.io/download/y6jvb/"
 
 # See the basic info of the downloaded file.
 Check: 
-	ls -hal Coding-assignment/data/hotels-vienna.csv
+	ls -hal ~/Coding-assignment/data/hotels-vienna.csv
 
 
 
