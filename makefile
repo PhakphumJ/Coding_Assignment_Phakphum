@@ -1,3 +1,7 @@
+## Run this first. 
+
+###### Let's Begin ##### 
+
 ### New Makefile for Assignment in Coding for Economist Course.
 
 ## Make directory for the project
@@ -11,13 +15,17 @@ Makedirectory:
 
 
 
-# Go to working Directory and Download data and storing it in the data folder.
+# Second rule: Go to working Directory and Download data and storing it in the data folder.
 Download:
 	cd ~/Coding-assignment; pwd; curl -Lo data/hotels-vienna.csv "https://osf.io/download/y6jvb/"
 
 # See the basic info of the downloaded file.
 Check: 
 	ls -hal ~/Coding-assignment/data/hotels-vienna.csv
+
+	
+
+
 
 
 
